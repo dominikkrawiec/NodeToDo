@@ -3,13 +3,21 @@
 <head>
   <title>To-do app with Node</title>
   <link rel="stylesheet" type="text/css" href="/assets/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
   <div id="cont">
-    <form>
+    <form id="add-item">
       <input type="text" placeholder="Add new item" name="item" required />
-      <input type="submit" value="Add item" />
+      <button type="submit" />add </button>
     </form>
+
+    <ul id="items">
+      <% for( var i = 0; i < todos.length; i++){ %>
+        <li><%=todos[i].item %></li>
+      <% } %>
+    </ul>
   </div>
+  <script src="/assets/todos.js"></script>
 </body>
 </html>
