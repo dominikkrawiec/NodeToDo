@@ -4,19 +4,23 @@
   <title>To-do app with Node</title>
   <link rel="stylesheet" type="text/css" href="/assets/style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 </head>
 <body>
   <div id="cont">
     <form id="add-item">
       <input type="text" placeholder="Add new item" name="item" required />
-      <button type="submit" />add </button>
+      <button type="submit" />
+      <img src="/assets/doge.png" />
+    </button>
     </form>
 
-    <ul id="items">
+    <ol id="items">
+      <h1>much productive wow</h1>
       <% for( var i = 0; i < todos.length; i++){ %>
         <li><%=todos[i].item %></li>
       <% } %>
-    </ul>
+    </ol>
   </div>
   <script src="/assets/todos.js"></script>
 </body>

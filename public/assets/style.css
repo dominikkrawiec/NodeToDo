@@ -1,3 +1,54 @@
 body {
-  background-color: skyblue;
+  background-image: url('bg.jpg');
+  background-repeat: repeat;
+  color: skyblue;
+  font-size: 24px;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+li:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+#cont {
+  background-color: white;
+  border: 5px solid orange;
+  border-radius: 15px;
+  padding: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+input[type=text] {
+  border: 5px solid orange;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: none;
+}
+
+button {
+  background-color: white;
+  border: 0px solid white;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: all 0.5s ease-in-out;
+  vertical-align: middle;
+}
+
+button img {
+  width: 50px;
+}
+
+button:hover {
+  transform: rotate(360deg);
 }
